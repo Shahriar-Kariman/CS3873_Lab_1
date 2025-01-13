@@ -161,6 +161,32 @@ header information will be displayed in the packet-header window. How long did i
 when the HTTP GET message was sent until the first HTTP response was received?
 
         {\bf Answer:} The GET message was captured at approximately $4.24_s$ and the response was captured at $4.31_s$ that means it took $0.07_s$ to get a reply.
+
+       \item[b.] In the trace you will find IPv4 addresses within the packets. Find an example packet in the trace
+where the IPv4 address associated with your machine is present. Compare this address with the
+IPv4 address you can find by using the following command: ipconfig /all on Windows, or ifconfig on
+MacOS or Linux. If you use Windows VM for the above capture, make sure you run the command
+on the terminal within the VM. Running this command also gives a 48-bit physical address for the
+network interference. This is the MAC (medium access control) address (not discussed in class yet)
+of your machine. Can you find the MAC address of the packet in the trace? Is it the same as the
+physical address returned by the above command?
+
+         {\bf Answer:} According to my terminal my ethernet address is {\bf e8:84:a5:0f:ac:c1} which is the same as the source address I see in wireshark.
+
+        \begin{figure}
+             \centering
+             \includegraphics[width=\linewidth]{../ifconfig_screenshot.png}
+             \caption{Screenshot from my terminal.}
+             \label{fig:1}
+        \end{figure}
+
+        \begin{figure}
+             \centering
+             \includegraphics[width=\linewidth]{../ifconfig_screenshot.png}
+             \caption{Screenshot from my terminal.}
+             \label{fig:1}
+        \end{figure}
+
     \end{enumerate}
 \end{enumerate}
 
