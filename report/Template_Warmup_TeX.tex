@@ -152,6 +152,18 @@ the details of captured packets.
 {\bf ANSWERS TO LAB QUESTIONS:}
 
 \begin{enumerate}
+    \item[5.] Examine the trace which contains live packet data exchanged between your machine and the Web
+server (the host providing the webpage to your machine).
+    \begin{enumerate}
+       \item[a.] Choose three of the protocols from your list and use Google or go to the IETF site to find
+out what they are being used to support.
+       \begin{enumerate}
+           \item {\bf Address Resolution Protocol (ARP):} Used to map MAC addresses to IP adresses.
+           \item {\bf Dynamic Host Configuration Protocol (DHCP):} Used to dynamically assigning IP addresses to each host on a network.
+           \item {\bf Transmission Control Protocol (TCP):} A comunication standard used to exchange messages across a network. This is part of the initial network implementation.
+           \item {\bf User Datagram Protocol (UDP)} Its a lot like TCP but with less checks for time sensetive applications like games.
+       \end{enumerate}
+    \end{enumerate}
     \item[6.] Based on the above trace, answer the following questions.
     \begin{enumerate}
         \item[a.] Select the first HTTP message shown in the packet-listing window. This should be the HTTP GET
@@ -182,8 +194,8 @@ physical address returned by the above command?
 
         \begin{figure}
              \centering
-             \includegraphics[width=\linewidth]{../ifconfig_screenshot.png}
-             \caption{Screenshot from my terminal.}
+             \includegraphics[width=\linewidth]{../wireshark_screenshot.png}
+             \caption{Screenshot from wireshark.}
              \label{fig:1}
         \end{figure}
 
